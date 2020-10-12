@@ -1,16 +1,34 @@
-array = [9, 30, 4, 1, 2]
-sorted = []
+arr = [9, 30, 4, 1, 2]
+
+
+
+def bubble_sort(array)
+loop do
 
 array.each_with_index do |val, index|
-    if array[index + 1] == nil
+
+  num = val
+  breaker = array[index + 1]
+  
+  if array[index + 1] == nil
         break
     elsif val > array[index + 1]
         array[index], array[index+1] = array[index + 1], array[index]
-        print array
-    elsif val < array[index + 1]
-        sorted.push(val)
-        print sorted
-    end
+      end
+  end
+  
+  if array.min == array[0] && array.max == array[array.length - 1]
+   p array
+   break
+  end
+
+  end
 end
+
+bubble_sort(arr)  
+
+
+
+
 
 
