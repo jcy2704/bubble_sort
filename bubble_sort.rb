@@ -1,6 +1,6 @@
 def bubble_sort(array)
   loop do
-    array.map.with_index do |val, index|
+    array.map.with_index do |_val, index|
       return array unless index != array.length - 1
 
       if array[index] > array[index + 1]
@@ -11,12 +11,13 @@ def bubble_sort(array)
   end
 end
 
-p bubble_sort([100,2,40,550,10,6,405,30])
+p bubble_sort([100, 2, 40, 550, 10, 6, 405, 30])
 
 def bubble_sort_by(arr)
   loop do
-    arr.map.with_index do |val, index|
+    arr.map.with_index do |_val, index|
       return arr unless index != arr.length - 1
+
       sort_list = yield(arr[index], arr[index + 1])
       if sort_list > 0
         arr[index], arr[index + 1] = arr[index + 1], arr[index]
@@ -26,4 +27,4 @@ def bubble_sort_by(arr)
   end
 end
 
-p bubble_sort_by(["hi","hello","hey"]) { |left, right| left.length - right.length }
+p bubble_sort_by(%w(hi hello hey)) { |left, right| left.length - right.length }
