@@ -1,34 +1,18 @@
-arr = [9, 30, 4, 1, 2, 9, 23, 100, 8, 1, 9, 1]
-
-
 
 def bubble_sort(array)
+  loop do
+    array.map.with_index do |val, index|
+      return array unless index != array.length - 1
 
-loop do
-
-
-
-array.each_with_index do |val, index|
-
-  
-  if array[index + 1] == nil
+      if array[index] > array[index + 1]
+        array[index], array[index + 1] = array[index + 1], array[index]
         break
-    elsif val >= array[index + 1]
-        array[index], array[index+1] = array[index + 1], array[index]
-        p array
-      end 
-      
-    while  
-      
-      
-   end 
+      end
+    end
   end
-
-
-
 end
 
-bubble_sort(arr)  
+p bubble_sort([100,2,40,550,10,6,405,30])
 
 
 
