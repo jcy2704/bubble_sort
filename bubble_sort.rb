@@ -14,8 +14,17 @@ end
 
 p bubble_sort([100,2,40,550,10,6,405,30])
 
+def bubble_sort_by(arr)
+  loop do
+    arr.map.with_index do |val, index|
+      return arr unless index != arr.length - 1
+      yield(arr[index], arr[index + 1])
+      if arr[index] > arr[index + 1]
+        arr[index], arr[index + 1] = arr[index + 1], arr[index]
+        break
+      end
+    end
+  end
+end
 
-
-
-
-
+p bubble_sort_by(["hi","hello","hey"]) { |left, right| left.length - right.length }
