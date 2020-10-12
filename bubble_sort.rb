@@ -1,4 +1,3 @@
-
 def bubble_sort(array)
   loop do
     array.map.with_index do |val, index|
@@ -18,8 +17,8 @@ def bubble_sort_by(arr)
   loop do
     arr.map.with_index do |val, index|
       return arr unless index != arr.length - 1
-      yield(arr[index], arr[index + 1])
-      if arr[index] > arr[index + 1]
+      sort_list = yield(arr[index], arr[index + 1])
+      if sort_list > 0
         arr[index], arr[index + 1] = arr[index + 1], arr[index]
         break
       end
