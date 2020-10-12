@@ -1,27 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# News Week
+# Bubble Sort
 
-We used Bootstrap Framework to create a clone of News Week website.
-
-![Desktop](Screenshots/Desktop.png)
-![Tablet](Screenshots/Tablet.png)
-![Phone](Screenshots/Phone.png)
+We created a Bubble Sort method for arrays using loops, map and conditional statements. We also created a second version using yield blocks.
 
 
 ## Built With
 
-- HTML5
-- CSS3
-- Bootstrap
+- Ruby
 
 ## Live Demo
 
-[News Week](https://rawcdn.githack.com/julian3493/newsweek-using-bootstrap/768cd735f7c102a1aff7bfbc038c2080a23e3c59/index.html)
+[Check our code](https://repl.it/repls/TestyOddRepository)
 
 ## Getting Started
 
-**This project was created for the sole purpose of understanding how framworks works such as Bootstrap. The following will be instructions on how you can see the project on your own computer.**
+**This project was created for the sole purpose of understanding the concept of bubble sorting.**
 
 
 To get a local copy up and running follow these simple example steps.
@@ -34,7 +28,7 @@ Internet browser: Firefox, Google Chrome, Opera...
 Download the code or copy the git repository to your computer.
 
 ### Usage
-Run the index.html file.
+Run the bubble_sort.rb file in your terminal.
 
 ### Run tests
 Linters errors
@@ -49,24 +43,18 @@ Linters errors
 - Twitter: [@yiak_](https://twitter.com/yiak_)
 - LinkedIn: [Steven Jack Chung](https://linkedin.com/in/stevenjchung)
 
-👤 **Julian Ramos**
+👤 **Thales Neves**
 
-- GitHub: [@julian3493](https://github.com/julian3493)
-- Twitter: [@JulianR16893833](https://twitter.com/JulianR16893833)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juli%C3%A1n-ricardo-ramos-arevalo-3868ba135/)
+- GitHub: [@thneves](https://github.com/thneves)
+- LinkedIn: [@thales-neves10](https://www.linkedin.com/in/thales-neves10/)
+- Twitter: [@tsneves11](https://twitter.com/tsneves11)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/julian3493/newsweek-using-bootstrap/issues).
+Feel free to check the [issues page](https://github.com/jcy2704/bubble_sort/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- News Week
